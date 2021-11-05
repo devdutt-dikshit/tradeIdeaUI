@@ -1,0 +1,12 @@
+.card-main{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;  
+    width: 70%;
+    margin: 0 auto;
+}
+
+.card-main .card{
+    margin: 20px;
+
+}
