@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { Link, Redirect, Route } from "react-router-dom";
 import { utils } from "../utils";
 
 export default class Login extends Component {
@@ -9,6 +9,12 @@ export default class Login extends Component {
             username:'',
             password:'',
         };
+    }
+    componentDidMount(){
+        console.log(!!localStorage.getItem('userToken'));
+        if(localStorage.getItem('userToken')){
+            <Redirect to="/" /> 
+        }
     }
     onlogin(){
         console.log(this.state.username)

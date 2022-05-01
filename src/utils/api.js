@@ -1,4 +1,5 @@
 import { Redirect } from "react-router-dom";
+
 import { paths } from ".";
 export default {
     ApiCall: ({ url, method='GET', data=null, cb})=>{

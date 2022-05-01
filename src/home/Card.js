@@ -1,4 +1,4 @@
-import { CardGroup, Card, Button } from "react-bootstrap"
+import { Card, Button } from "react-bootstrap"
 import React from "react";
 // import { BsFillBellFill } from "react-icons/bs";
 const IdeaCard = props => {
